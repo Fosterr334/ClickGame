@@ -1,0 +1,132 @@
+.player0 {
+    background-color : teal;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float: left;
+}
+.player1 {
+    background-color : red;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player2 {
+    background-color : blue;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player3 {
+    background-color : green;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player4 {
+    background-color : yellow;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player5 {
+    background-color : orange;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player6 {
+    background-color : white;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player7 {
+    background-color : black;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player8 {
+    background-color : brown;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player9 {
+    background-color : grey;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player10 {
+    background-color : orchid;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
+.player11 {
+    background-color : lavender;
+    color            : white;
+    margin           : 10px;
+    height           : 220px;
+    width            : 220px;
+    position         : relative;
+    border-style     : solid;
+    border-color     : black;
+    float            : left;
+}
