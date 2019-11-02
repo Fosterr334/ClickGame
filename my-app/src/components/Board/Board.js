@@ -1,45 +1,61 @@
 import React, { Component } from "react";
 import Tile from "../Tile/Tile";
+import Score from '../Score/Score';
 import "./Board.css"
 class Board extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            current: "",
+            x:0,
             tiles: Array(8).fill(null),
             board: [{ player: 0, clicked: false }, { player: 1, clicked: false }, { player: 2, clicked: false }, { player: 3, clicked: false }, { player: 4, clicked: false }, { player: 5, clicked: false }, { player: 6, clicked: false }, { player: 7, clicked: false }, { player: 8, clicked: false }, { player: 9, clicked: false }, { player: 10, clicked: false }, { player: 11, clicked: false },]
         }
     }
     shuffle(array) {
         array.sort(() => Math.random() - 0.5);
-      }
+    }
     renderTile(i) {
+        console.log(`this is in render Tile${i}`);
         return (
             <Tile
                 players={this.state.board[i]}
+                clickCheck={this.clickCheck}
             />
         );
     }
-    clickCheck = () =>{
-       if (this.state.board.clicked === true){
-           alert("Game Over")
-       }
-       else{
-           this.state.board.clicked = true;
-       }
-       this.setCurrentValue();
+    renderScore(){
+        return(
+            <Score
+            x ={this.state.x} />
+        )
     }
-    boardShuffle = () => {
-        var tempBoard = this.state.board
-        return this.shuffle(tempBoard);
+    clickCheck = (player) => {
+        console.log("clicked!")
+        console.log(this.state.board[player].player)
+        console.log(this.state.board[player].clicked)
+        console.log(`%c${this.state.x}`,'color: purple')
+        if (this.state.board[player].clicked === true) {
+            alert("Game Over")
+        }
+        else {
+            this.state.board[player].clicked = true;
+            this.setCurrentValue(player);
+            
+        }
+        
     }
-    setCurrentValue = () => {
-        var tempBoard = this.boardShuffle; 
-        this.setState({board:tempBoard});
+    setCurrentValue = (player) => {
+        var tempX = this.state.x;
+        tempX ++
+        var tempBoard = this.state.board;
+        this.shuffle(this.state.board);
+        console.log({tempBoard})
+        this.setState({board:tempBoard,x:tempX});
     }
     render() {
         return (
             <div>
+                {this.renderScore()}
                 {/* <div className="status">{status}</div> */}
                 <div className="row">
                     <div className="col s4">
